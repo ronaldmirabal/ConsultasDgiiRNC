@@ -12,11 +12,20 @@ composer require ronaldmirabal/consultas-dgii-rnc
 ```
 
 
-## Como Usar
+## Como Usar - Consultar Contribuyente por RNC/Cédula
 
 ```php
-$consultasDgiiRnc = new RonaldMirabal\ConsultasDgiiRnc();
-echo $consultasDgiiRnc->consultarRnc('101027797');
+use RonaldMirabal\ConsultasDgiiRnc\ConsultasDgiiRnc;
+
+$rncConsultor = new ConsultasDgiiRnc;
+$resultado = $rncConsultor->consultarRnc("[SU RNC]");
+
+if ($resultado->success)
+{
+    $this->info("RNC/Cédula: {$response->CedulaORnc}");
+    $this->info("Nombre Comercial: {$response->NombreComercial}");
+}
+
 ```
 
 ## Testing

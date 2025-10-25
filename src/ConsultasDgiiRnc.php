@@ -9,7 +9,7 @@ class ConsultasDgiiRnc
 {
     protected string $baseUrl = 'https://dgii.gov.do/app/WebApps/ConsultasWeb2/ConsultasWeb/consultas/rnc.aspx';
 
-    public function consultarRnc(string $rnc): array
+    public function consultarRnc(string $rnc)
     {
         $client = new Client(['cookies' => true]);
 
@@ -76,6 +76,6 @@ class ConsultasDgiiRnc
                 : 'No se encontró información para este RNC.';
         }
 
-        return $responseData;
+        return (object) $responseData;
     }
 }
