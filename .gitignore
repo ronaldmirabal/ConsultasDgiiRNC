@@ -15,6 +15,9 @@ phpstan.neon.dist
 # Recursos de vistas si no se usan
 resources/views/
 
+# Tests (opcional si no quieres subirlos)
+/tests/
+
 # Logs
 npm-debug.log
 yarn-error.log
