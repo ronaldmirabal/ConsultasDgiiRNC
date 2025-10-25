@@ -1,24 +1,25 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ronaldmirabal/consultas-dgii-rnc",
+    "description": "Es un paquete desarrollado para consultar el estado del rnc del contribuyente en República Dominicana.",
     "keywords": [
-        ":vendor_name",
+        "RonaldMirabal",
         "laravel",
-        ":package_slug"
+        "consultas-dgii-rnc"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ronaldmirabal/consultas-dgii-rnc",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Ronald Mirabal",
+            "email": "ronaldmirabal@outlook.es",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.3",
+        "illuminate/contracts": "^11.0||^12.0",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^11.0||^12.0"
+        "symfony/dom-crawler": "^7.3"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -35,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "RonaldMirabal\\ConsultasDgiiRnc\\": "src/",
+            "RonaldMirabal\\ConsultasDgiiRnc\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "RonaldMirabal\\ConsultasDgiiRnc\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "RonaldMirabal\\ConsultasDgiiRnc\\ConsultasDgiiRncServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "ConsultasDgiiRnc": "RonaldMirabal\\ConsultasDgiiRnc\\Facades\\ConsultasDgiiRnc"
             }
         }
     },
