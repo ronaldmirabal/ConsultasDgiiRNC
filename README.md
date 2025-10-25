@@ -1,11 +1,6 @@
 # Es un paquete desarrollado para consultar el estado del rnc del contribuyente en República Dominicana.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ronaldmirabal/consultas-dgii-rnc.svg?style=flat-square)](https://packagist.org/packages/ronaldmirabal/consultas-dgii-rnc)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ronaldmirabal/consultas-dgii-rnc/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ronaldmirabal/consultas-dgii-rnc/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ronaldmirabal/consultas-dgii-rnc/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ronaldmirabal/consultas-dgii-rnc/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/ronaldmirabal/consultas-dgii-rnc.svg?style=flat-square)](https://packagist.org/packages/ronaldmirabal/consultas-dgii-rnc)
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Este paquete ha sido desarrollado tomando como inspiración el proyecto [ConsultasDgii](https://github.com/wrobirson/ConsultasDgii) Su objetivo es ofrecer funcionalidades similares de manera más sencilla y adaptada, aprovechando las buenas prácticas de Laravel para facilitar su integración y uso en proyectos propios.
 
 ## Support us
 
@@ -15,7 +10,7 @@ We invest a lot of resources into creating [best in class open source packages](
 
 We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
-## Installation
+## 📦 Instalación
 
 You can install the package via composer:
 
