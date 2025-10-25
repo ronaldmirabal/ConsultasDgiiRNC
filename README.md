@@ -27,6 +27,16 @@ if ($resultado->success)
 }
 
 ```
+## :rotating_light: Manejo de Errores
+```php
+if (!resultado.success)
+{
+    $this->info("Ocurrió un error en la consulta.");
+    $this->info($resultado->message);
+}
+
+```
+
 
 ## Testing
 
