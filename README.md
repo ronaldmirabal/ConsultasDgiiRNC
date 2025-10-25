@@ -22,8 +22,8 @@ $resultado = $rncConsultor->consultarRnc("[SU RNC]");
 
 if ($resultado->success)
 {
-    $this->info("RNC/Cédula: {$response->CedulaORnc}");
-    $this->info("Nombre Comercial: {$response->NombreComercial}");
+    $this->info("RNC/Cédula: {$resultado->CedulaORnc}");
+    $this->info("Nombre Comercial: {$resultado->NombreComercial}");
 }
 
 ```
