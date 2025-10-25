@@ -11,6 +11,10 @@ Puedes instalar el paquete a través de composer:
 composer require ronaldmirabal/consultas-dgii-rnc
 ```
 
+## :clipboard: Requisitos
+- PHP ^8.3
+- Laravel ^10.0
+
 
 ## Como Usar - Consultar Contribuyente por RNC/Cédula
 
