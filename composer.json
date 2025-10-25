@@ -1,10 +1,6 @@
 {
     "name": "ronaldmirabal/consultas-dgii-rnc",
     "description": "Es un paquete desarrollado para consultar el estado del rnc del contribuyente en República Dominicana.",
-    "keywords": [
-        "RonaldMirabal",
-        "consultas-dgii-rnc"
-    ],
     "homepage": "https://github.com/ronaldmirabal/consultas-dgii-rnc",
     "license": "MIT",
     "authors": [
