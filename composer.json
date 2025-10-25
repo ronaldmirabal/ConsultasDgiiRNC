@@ -3,7 +3,6 @@
     "description": "Es un paquete desarrollado para consultar el estado del rnc del contribuyente en República Dominicana.",
     "keywords": [
         "RonaldMirabal",
-        "laravel",
         "consultas-dgii-rnc"
     ],
     "homepage": "https://github.com/ronaldmirabal/consultas-dgii-rnc",
