@@ -5,14 +5,14 @@ namespace RonaldMirabal\ConsultasDgiiRnc;
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class ConsultasDgiiRnc {
-
-        protected string $baseUrl = 'https://dgii.gov.do/app/WebApps/ConsultasWeb2/ConsultasWeb/consultas/rnc.aspx';
+class ConsultasDgiiRnc
+{
+    protected string $baseUrl = 'https://dgii.gov.do/app/WebApps/ConsultasWeb2/ConsultasWeb/consultas/rnc.aspx';
 
     public function consultarRnc(string $rnc): array
     {
-         $client = new Client(['cookies' => true]);
-        
+        $client = new Client(['cookies' => true]);
+
         // 1️⃣ Cargar la página inicial (GET)
         $response = $client->get($this->baseUrl);
         $html = (string) $response->getBody();
@@ -37,13 +37,13 @@ class ConsultasDgiiRnc {
             'ctl00$cphMain$btnBuscarPorRNC' => 'BUSCAR',
         ];
 
-         // 4️⃣ Enviar la solicitud POST
+        // 4️⃣ Enviar la solicitud POST
         $response = $client->post($this->baseUrl, [
             'form_params' => $formData,
             'headers' => [
                 'User-Agent' => 'Mozilla/5.0',
-                'Content-Type' => 'application/x-www-form-urlencoded'
-            ]
+                'Content-Type' => 'application/x-www-form-urlencoded',
+            ],
         ]);
 
         $htmlResponse = (string) $response->getBody();
@@ -68,7 +68,7 @@ class ConsultasDgiiRnc {
                 'Estado' => $crawler->filterXPath('//tr[6]/td[2]')->count() ? trim($crawler->filterXPath('//tr[6]/td[2]')->text()) : null,
                 'ActividadEconomica' => $crawler->filterXPath('//tr[7]/td[2]')->count() ? trim($crawler->filterXPath('//tr[7]/td[2]')->text()) : null,
                 'AdministracionLocal' => $crawler->filterXPath('//tr[8]/td[2]')->count() ? trim($crawler->filterXPath('//tr[8]/td[2]')->text()) : null,
-                'success' => true
+                'success' => true,
             ];
         } else {
             $responseData['message'] = $crawler->filter('#cphMain_lblInformacion')->count()
