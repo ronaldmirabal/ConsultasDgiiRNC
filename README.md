@@ -38,7 +38,7 @@ if (!resultado.success)
 ```
 
 
-## Testing
+## :white_check_mark: Testing
 
 ```bash
 composer test
@@ -48,6 +48,6 @@ composer test
 - [Ronald Mirabal](https://github.com/ronaldmirabal)
 - [All Contributors](../../contributors)
 
-## License
+## 📄 License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
