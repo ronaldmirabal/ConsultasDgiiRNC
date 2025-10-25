@@ -5,6 +5,16 @@ composer.lock
 # Frontend Assets
 /node_modules
 
+# Base de datos local (si no aplica)
+database/
+
+# PHPStan / análisis estático
+phpstan-baseline.neon
+phpstan.neon.dist
+
+# Recursos de vistas si no se usan
+resources/views/
+
 # Logs
 npm-debug.log
 yarn-error.log
