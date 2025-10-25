@@ -12,43 +12,18 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 
 ## 📦 Instalación
 
-You can install the package via composer:
+Puedes instalar el paquete a través de composer:
 
 ```bash
 composer require ronaldmirabal/consultas-dgii-rnc
 ```
 
-You can publish and run the migrations with:
 
-```bash
-php artisan vendor:publish --tag="consultas-dgii-rnc-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="consultas-dgii-rnc-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="consultas-dgii-rnc-views"
-```
-
-## Usage
+## Como Usar
 
 ```php
 $consultasDgiiRnc = new RonaldMirabal\ConsultasDgiiRnc();
-echo $consultasDgiiRnc->echoPhrase('Hello, RonaldMirabal!');
+echo $consultasDgiiRnc->consultarRnc('101027797');
 ```
 
 ## Testing
@@ -56,19 +31,6 @@ echo $consultasDgiiRnc->echoPhrase('Hello, RonaldMirabal!');
 ```bash
 composer test
 ```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
 ## Credits
 
 - [Ronald Mirabal](https://github.com/ronaldmirabal)
