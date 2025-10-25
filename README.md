@@ -36,7 +36,20 @@ if (!resultado.success)
 }
 
 ```
-
+## :rotating_light: Variables Accesibles
+```php
+[
+    'CedulaORnc'          => 'Número de RNC o Cédula',
+    'NombreORazonSocial'  => 'Nombre o Razón Social del contribuyente',
+    'NombreComercial'     => 'Nombre comercial registrado',
+    'RegimenDePagos'      => 'Régimen de pagos del contribuyente',
+    'Categoria'           => 'Categoría fiscal asignada',
+    'Estado'              => 'Estado actual (activo/inactivo)',
+    'ActividadEconomica'  => 'Actividad económica principal',
+    'AdministracionLocal' => 'Administración local correspondiente',
+    'success'             => true // Indica si la consulta fue exitosa
+]
+```
 
 ## :white_check_mark: Testing
 
